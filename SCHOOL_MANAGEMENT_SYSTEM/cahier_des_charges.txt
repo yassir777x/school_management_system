@@ -1,0 +1,103 @@
+1. Présentation du projet
+Nom du projet : Student Management System (SMS)
+
+Objectif :
+Créer une application web permettant de gérer efficacement les informations des écoles, classes, élèves, enseignants, parents, matières et notes, avec un système d’authentification multi-rôles (admin, enseignant, parent, élève).
+
+Contexte :
+Les établissements scolaires ont besoin d’un système centralisé pour organiser leurs données, faciliter la communication entre enseignants, parents et élèves, et suivre la progression scolaire.
+
+Problématique :
+Actuellement, la gestion des informations scolaires est souvent manuelle ou dispersée, ce qui entraîne des erreurs, des pertes de temps et un manque de transparence.
+
+2. Description des besoins
+
+Fonctionnalités attendues :
+
+- Création et gestion des comptes utilisateurs (admin, enseignants, parents, élèves).
+
+- Gestion des établissements scolaires (écoles).
+
+- Gestion des classes et des matières associées.
+
+- Ajout, modification et suppression des élèves, enseignants et parents.
+
+- Association des élèves à une classe et à leurs parents.
+
+- Attribution des matières aux enseignants et aux classes.
+
+- Saisie et consultation des notes des élèves par matière.
+
+- Consultation des bulletins par les élèves et leurs parents.
+
+- Interface de connexion sécurisée avec gestion des rôles.
+
+- Tableau de bord personnalisé selon le rôle (admin, enseignant, parent, élève).
+
+Acteurs du système :
+
+- Administrateur : Gère l’ensemble du système et les écoles.
+
+- Enseignant : Gère ses classes, matières, et notes des élèves.
+
+- Parent : Consulte les notes et informations de ses enfants.
+
+- Élève : Consulte ses notes et informations personnelles.
+
+3. Spécifications fonctionnelles
+
+Inscription / connexion :
+  Chaque utilisateur peut se connecter avec son rôle. Les admins ont accès à toutes les fonctionnalités.
+
+Gestion des écoles :
+  L’administrateur crée et modifie les écoles.
+
+Gestion des classes :
+  Chaque école contient plusieurs classes. L’admin crée et attribue les classes.
+
+Gestion des utilisateurs :
+  Ajout, modification, suppression des élèves, enseignants, parents.
+
+Association élèves-parents :
+  Un parent peut être lié à plusieurs élèves.
+
+Gestion des matières et enseignements :
+  Attribution des matières aux enseignants et classes via la table enseignement.
+
+Saisie des notes :
+  L’enseignant entre les notes pour ses matières et ses élèves.
+
+Consultation des notes :
+  Élèves et parents consultent les notes via un tableau de bord.
+
+4. Spécifications techniques
+
+Technologies envisagées :
+
+Frontend : HTML5, CSS3, JavaScript 
+Backend : PHP 
+Base de données : MySQL 
+
+- Architecture prévue :
+    Application web client-serveur avec authentification sécurisée, API REST pour gestion des données.
+
+- Hébergement :  
+    Serveur web Linux (ex: Apache ou Nginx) avec base de données relationnelle.
+
+- Sécurité :
+    Gestion des sessions sécurisées, cryptage des mots de passe (bcrypt), validation des entrées côté serveur.
+
+6. Maquettes et UX/UI
+- Navigation simple avec menu principal (dashboard, gestion utilisateurs, gestion notes, etc.).
+- Utilisation de formulaires clairs et validation en temps réel.
+
+7. Livrables attendus
+- Manuel utilisateur pour chaque type d’acteur (admin, enseignant, parent, élève).
+- Planning de développement avec jalons (ex: analyse, conception, développement, tests, déploiement).
+
+8. Annexes
+- Glossaire des termes utilisés (ex : Élève, Parent, Enseignant, Matière).
+- Diagrammes conceptuels (MCD, MLD).
+- Références utilisées (ex : documentation PHP, guides RGPD).
+- Liens vers les maquettes et documents supplémentaires.
+
