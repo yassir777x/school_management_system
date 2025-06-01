@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>واجهة المستخدم</title>
+</head>
+
+<body>
+    <h2>أدخل اسمك:</h2>
+    <input type="text" id="name" placeholder="اسمك">
+    <button onclick="sendData()">إرسال</button>
+
+    <p id="response"></p>
+
+    <script>
+        function sendData() {
+            const name = document.getElementById("name").value;
+
+            fetch("http://localhost/yassir/index.php", {
+                method: "POST",
+                headers: {  
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ name })
+            })
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById("response").innerText = data.message;
+                })
+                .catch(err => {
+                    console.error("خطأ:", err);
+                    document.getElementById("response").innerText = "حدث خطأ في الاتصال بالخادم.";
+                });
+        }
+    </script>
+</body>
+
+</html>

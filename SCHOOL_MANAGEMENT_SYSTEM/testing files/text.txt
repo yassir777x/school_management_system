@@ -1,0 +1,19 @@
+
+tableau entier : Tab[10]
+entier : i , min , max
+debut 
+ecrire"remplir le tableau"
+pour i allant de 0 a 9 faire
+    lire Tab[i]
+fpour
+min <-- Tab[0]
+max <-- Tab[0]
+pour i alland de 1 a 9 faire 
+    si Tab[i] < min alors 
+        min <-- Tab[i]
+    fsi
+    si Tab[i] > max alors 
+        max <-- Tab[i]
+    fsi
+fpour
+
